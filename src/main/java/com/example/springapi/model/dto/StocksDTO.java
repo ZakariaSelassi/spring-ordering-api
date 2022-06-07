@@ -8,4 +8,8 @@ import lombok.Data;
 public class StocksDTO {
     private long idStocks;
     private int quantity;
+
+    public StocksDTO() {
+
+    }
 }

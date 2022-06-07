@@ -15,6 +15,11 @@ public class MenuDTO {
     private String nameMenu;
     private double amount;
     private Set<SmallIngredientsDTO> ingredients;
+
+    public MenuDTO() {
+
+    }
+
     @Data
     @AllArgsConstructor
     public static class SmallIngredientsDTO{

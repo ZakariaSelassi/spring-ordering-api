@@ -17,6 +17,10 @@ public class IngredientsDTO {
 
     private SmallStockDTO stock;
 
+    public IngredientsDTO() {
+
+    }
+
     @Data
     @AllArgsConstructor
     public static class SmallStockDTO{

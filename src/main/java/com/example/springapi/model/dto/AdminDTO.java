@@ -12,5 +12,19 @@ import java.util.Set;
 public class AdminDTO {
     private long idAdmin;
     private String username;
-    private Set<StocksDTO> stocksDTOS;
+    private Set<SmallStockDTO> stocksDTOS;
+
+    public AdminDTO() {
+
+    }
+
+    @Data
+    @AllArgsConstructor
+    public static class SmallStockDTO{
+        private long idStock;
+        private int quantity;
+        public static AdminDTO.SmallStockDTO of(Stocks stocks){
+            return new AdminDTO.SmallStockDTO(stocks.getIdStocks(),stocks.getQuantity());
+        }
+    }
 }
