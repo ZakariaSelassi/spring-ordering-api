@@ -1,4 +1,4 @@
 package com.example.springapi.mapper;
 
-public class MenuMapper {
+public class StockMapper {
 }
